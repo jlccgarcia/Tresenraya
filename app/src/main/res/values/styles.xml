@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Tema a aplicar -->
+    <style name="AppTheme" parent="android:Theme.Holo.NoActionBar.Fullscreen"></style>
+
+    <!-- Definición de los estilos del resto de elementos -->
+    <!-- Para el título -->
+    <style name="titulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_titulo</item>
+    </style>
+
+    <!-- Para los botones -->
+    <style name="boton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/alto_min_boton</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <item name="android:layout_margin">@dimen/margen_boton</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:background">@drawable/boton</item>
+        <item name="android:onClick">aJugar</item> <!-- Evento para lanzar la actividad oportuna cuando se pulse el botón -->
+    </style>
+
+    <!-- Para los botones de radio -->
+    <style name="radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_radio</item>
+        <item name="android:alpha">0.8</item> <!-- Nivel de transparencia -->
+    </style>
+
+    <!-- Para las casillas del tablero: casilla en blanco, con círculo o con aspa -->
+    <style name="casilla">
+        <item name="android:layout_width">@dimen/casilla</item>
+        <item name="android:layout_height">@dimen/casilla</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:onClick">toque</item> <!-- Evento para lanzar la actividad oportuna cuando se pulse la casilla en blanco -->
+    </style>
+</resources>
